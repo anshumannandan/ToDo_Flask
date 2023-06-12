@@ -1,4 +1,4 @@
-from app import db, ma, app
+from app import db, ma, app, pagination
 from . views import TaskLCView, TaskRUDView
 from flask_restful import Api
 

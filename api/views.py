@@ -1,14 +1,13 @@
 from . models import TaskModel
 from . schemas import TaskSchema
-from . import db
+from . import db, pagination
 from flask_restful import Resource, request
 
 
 class TaskLCView(Resource):
     
     def get(self):
-        tasks = TaskModel.query.all()
-        return TaskSchema(many=True).dump(tasks)
+        return pagination.paginate(TaskModel, TaskSchema(), True)
 
     def post(self):
         data = request.get_json()
