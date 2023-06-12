@@ -2,8 +2,8 @@
 ## <p align = "center"> Features </p>
 
 ### <p align = "center">1. Get Paginated List of all Tasks </p>
-![image](https://github.com/anshumannandan/ToDo_Flask/assets/93365821/93a8eda2-3d7b-43bd-b130-b522552ca9cd)
-![image](https://github.com/anshumannandan/ToDo_Flask/assets/93365821/570ee017-267d-4b2a-9134-450291ded845)
+![image](https://github.com/anshumannandan/ToDo_Flask/assets/93365821/aea13487-e8e7-4af8-9ab0-7c6750d2ec9e)
+![image](https://github.com/anshumannandan/ToDo_Flask/assets/93365821/a1c135f1-f945-4e94-814d-f15bc72bf0f5)
 
 ### <p align = "center">2. Add a Task </p>
 ![image](https://github.com/anshumannandan/ToDo_Flask/assets/93365821/96dd19a9-7e8d-4141-a292-212a37b71fb0)

@@ -28,16 +28,16 @@ class TaskRUDView(Resource):
         return TaskSchema().dump(task)
 
     def patch(self, pk):
-        task = TaskModel.query.filter_by(id=pk).first()
-        if task:
+        task = TaskModel.query.filter_by(id=pk)
+        if task.first():
             data = request.get_json()
             try:
                 task_data = TaskSchema(partial=True).load(data)
             except Exception as error:
                 return error.normalized_messages(), 400
-            task.query.update(task_data)
+            task.update(task_data)
             db.session.commit()
-        return TaskSchema().dump(task)
+        return TaskSchema().dump(task.first())
 
     def delete(self, pk):
         task = TaskModel.query.filter_by(id=pk).first()
